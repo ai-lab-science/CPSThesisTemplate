@@ -1,0 +1,112 @@
+\documentclass[11pt,twoside]{report}
+
+
+% Packages, format and definitions import
+\include{A_Setup/Packages.tex}
+\include{A_Setup/Format_Definitions.tex}
+
+
+
+% header and footer
+\fancyhead{}
+\fancyhead[RO,LE]{short title of the thesis}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[CO,CE]{Chapter \thechapter}
+\fancyfoot[LO,RE]{your name}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Title, author and date
+\title{Thesis title}
+\author{your name}
+\date{Day Month Year}
+
+% Bibliography
+%\addbibresource{D_Literature/Bib-File-Name}
+
+% graphics path
+\graphicspath{{B_Figures/}}
+
+% Document
+\begin{document}
+	
+	% Title page, in case of a master thesis you have to download it from Mu-Online
+	\input{C_Chapters/titlepage}
+	\newpage\null\thispagestyle{empty}\newpage
+	
+
+	
+
+	
+	\chapter*{Declaration}% in case of a master thesis you have to download it from Mu-Online
+	I hereby declare that the present diploma thesis is composed
+	by myself and that the work contained herein is my own. I also confirm that I have only used the specified resources. All formulations and concepts taken verbatim or in substance from printed
+	or unprinted material or from the Internet have been cited according to the rules of scientific practice and indicated by footnotes or other exact references to the original source. The present thesis has not been submitted to another university for the award of an academic
+	degree in this form. This thesis has been submitted in printed and electronic form. I hereby confirm that the content of the digital version is the same as in the printed version. I understand that the provision of incorrect information may have legal consequences. \\ 
+	\\ \\
+	\\ \\
+    \\\\
+	Your Name \space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space Leoben, \date{\today}
+	
+	\newpage\null\thispagestyle{empty}\newpage
+	
+	
+	% Abstract
+	\input{C_Chapters/abstract}
+	
+	
+	%Acknowledgements
+	\chapter*{Acknowledgements}
+	This thesis is dedicated to...
+	%\newpage\null\thispagestyle{empty}\newpage
+	
+	%Table of Contents
+	\tableofcontents
+	
+	%List of abbreviations
+	\chapter*{List of Abbreviations}
+	
+	
+	%Chapters
+	\chapter{Introduction}
+	\input{C_Chapters/introduction}
+	
+	\chapter{Background Methods}
+	
+	\chapter{Method developed in this Thesis}
+	
+	\chapter{Experiments}
+	
+	
+	
+	
+	\chapter{Discussion and Future Work}
+	\input{C_Chapters/discussion}
+	
+	%Biblography
+	\clearpage
+	\addcontentsline{toc}{chapter}{Bibliography}
+	\printbibliography  
+	
+	%Appendix
+	\appendix
+	\chapter{Appendix}
+	
+	% Delete this in your thesis
+	\chapter{The Writing Check-List: Mandatory before Submission}
+	\input{E_Appendix/writing_check.tex}
+
+ 	
+ 	\clearpage
+	
+	
+
+
+
+
+
+
+
+\end{document}
+
